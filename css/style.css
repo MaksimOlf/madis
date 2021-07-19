@@ -1483,6 +1483,9 @@ body.ie ._ibg img {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 0;
   top: -500px;
   right: 0;
@@ -1500,7 +1503,21 @@ body.ie ._ibg img {
 }
 
 .search-form__button {
-  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  margin-left: 10px;
+  background-color: #fff;
+  border: 2px solid #083791;
+  border-radius: 5px;
+  padding: 0 5px;
 }
 
 .search-form__input::-webkit-input-placeholder {
